@@ -1,5 +1,4 @@
 'use client';
-import { useEffect } from 'react';
 import { FacilityCard } from './FacilityCard';
 import { useFacilityStore } from '../../store/facilityStore';
 import { useRouter } from "next/navigation";
