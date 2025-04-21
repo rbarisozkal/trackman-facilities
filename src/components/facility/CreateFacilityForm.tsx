@@ -40,7 +40,7 @@ export function CreateFacilityForm() {
             closingTime: data.closingTime,
             isDefaultFacility: isFirstFacility ? true : data.isDefaultFacility,
         });
-        router.push('/');
+        router.push('/facilities');
     };
 
     return (
