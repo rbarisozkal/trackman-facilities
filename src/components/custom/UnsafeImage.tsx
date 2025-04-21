@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image, {ImageProps} from 'next/image';
 
 const anyDomainLoader = ({ src }: { src: string }) => src;
 
-const UnsafeImage = (props:any) => (
+const UnsafeImage = (props:ImageProps) => (
     <Image
         loader={anyDomainLoader}
         unoptimized
