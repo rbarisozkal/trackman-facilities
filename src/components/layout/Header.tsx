@@ -20,7 +20,7 @@ export function Header() {
           </Link>
         </div>
 
-        <nav className="flex space-x-6">
+        <nav className="flex space-x-6 items-center">
           <Link href={"/"} className={pathname === "/" ? "font-bold" : ""}>Facilities</Link>
           <Link href={"/locations"} className={pathname === "/locations" ? "font-bold" : ""}>Locations</Link>
           <Link href={"/players"} className={pathname === "/players" ? "font-bold" : ""}>Players</Link>
