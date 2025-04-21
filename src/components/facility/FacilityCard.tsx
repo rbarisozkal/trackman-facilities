@@ -1,12 +1,13 @@
 "use client"
 import Image from 'next/image';
-import { Facility } from '../../types/facility';
+import { Facility } from '@/types/facility';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { FacilityDeleteDialog } from './FacilityDeleteDialog';
 import { useState } from 'react';
 import { isFacilityOpen } from '@/lib/utils';
+import UnsafeImage from "@/components/custom/UnsafeImage";
 
 interface FacilityCardProps {
     facility: Facility;
@@ -22,7 +23,7 @@ export function FacilityCard({ facility, onEdit }: FacilityCardProps) {
         <>
             <Card className="overflow-hidden shadow-lg flex flex-col w-[24rem] p-3">
                 <div className="relative w-full h-[200px]">
-                    <Image
+                    <UnsafeImage
                         src={image}
                         alt={name}
                         fill
