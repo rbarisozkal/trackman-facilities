@@ -15,7 +15,7 @@ export function FacilityList() {
 
 
   return (
-    <div className="flex flex-col items-center max-w-[74rem] px-2">
+    <div className="flex flex-col items-center max-w-[74rem] px-2 py-4">
       <div className="flex mb-4 self-end items-center">
         <Button variant={"primary"} asChild>
           <Link href="/facilities/new">
